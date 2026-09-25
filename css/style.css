@@ -15,10 +15,11 @@
   *{ 
     box-sizing:border-box; 
   }
-  body{
+body{
     font-family:'Bricolage Grotesque', sans-serif;
     color:var(--ink);
     margin:0;
+    padding-top: 80px;
   }
   h1,h2,h3,h4{ 
     font-weight:700; 
@@ -49,7 +50,7 @@
     border-radius:999px;
     padding:10px 22px;
     font-weight:600;
-    font-size:0.9rem;
+    font-size:14px;
     text-decoration:none;
     display:inline-flex;
     align-items:center;
@@ -70,7 +71,7 @@
     border-radius:999px;
     padding:12px 24px;
     font-weight:600;
-    font-size:0.9rem;
+    font-size:14px;
     display:inline-flex;
     align-items:center;
     gap:8px;
@@ -78,7 +79,8 @@
     transition:background .2s ease,transform .2s ease;
   }
   .btn-pill-solid:hover{ 
-    background:var(--accent-dark); color:#fff; 
+    background:var(--accent-dark); 
+    color:#fff; 
     transform:translateY(-2px); 
   }
  
@@ -89,7 +91,7 @@
     border-radius:999px;
     padding:12px 24px;
     font-weight:600;
-    font-size:0.9rem;
+    font-size:14px;
     display:inline-flex;
     align-items:center;
     gap:8px;
@@ -111,10 +113,12 @@
     background:var(--ink); 
     color:#fff; 
   }
-  .circle-icon-btn.on-dark{ border-color:rgba(255,255,255,0.25); background:transparent; 
+  .circle-icon-btn.on-dark{ 
+  border-color:rgba(255,255,255,0.25); background:transparent; 
   color:#fff; 
 }
-  .circle-icon-btn.on-dark:hover{ background:#fff; color:var(--accent); 
+  .circle-icon-btn.on-dark:hover{ 
+    background:#fff; color:var(--accent); 
   }
  
   .ph{
@@ -123,13 +127,27 @@
     align-items:center;
     justify-content:center;
     color:var(--muted);
-    font-size:1.6rem;
+    font-size:26px;
     border-radius:20px;
     overflow:hidden;
   }
  
   /* ---------- Header (reused) ---------- */
+  .site-header {
+  transition: transform 0.3s ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
   .site-header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
     padding:20px 0; 
   }
   .header-pill{
@@ -139,11 +157,11 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    box-shadow:0 6px 20px rgba(31,53,53,0.06);
+    box-shadow:0 6px 20px rgba(31,53,53,0.06), 0 2px 8px rgba(31,53,53,0.08);
   }
   .brand{ 
     font-weight:700; 
-    font-size:1.15rem; 
+    font-size:18px; 
     color:var(--ink); 
     text-decoration:none;
   }
@@ -157,7 +175,7 @@
   .nav-links a{ 
     color:var(--ink-soft); text-decoration:none; 
     font-weight:500; 
-    font-size:0.95rem; 
+    font-size:15px; 
   }
   .nav-links a.active{ 
     color:var(--ink); 
@@ -185,7 +203,7 @@
     width:100%; 
     text-align:center; 
     font-weight:800;
-    font-size:clamp(3rem, 9.5vw, 7.5rem); line-height:1; 
+    font-size:clamp(48px, 9.5vw, 120px); line-height:1; 
     letter-spacing:-2px;
     background:linear-gradient(180deg, rgba(31,53,53,0.55) 0%, rgba(31,53,53,0.12) 100%);
     -webkit-background-clip:text; background-clip:text; 
@@ -217,7 +235,7 @@
     top:8%; 
     right:4%; 
     z-index:3; 
-    font-size:0.95rem; 
+    font-size:15px; 
     color:var(--ink-soft); 
     font-weight:500; 
     text-align:right; 
@@ -228,13 +246,13 @@
     justify-content:flex-end; 
   }
   .stat-num{ 
-    font-size:1.9rem; 
+    font-size:30px; 
     font-weight:800; 
     color:var(--ink); 
     line-height:1; 
   }
   .stat-label{ 
-    font-size:0.82rem; 
+    font-size:13px; 
     color:var(--ink-soft); 
     margin-top:4px; 
   }
@@ -253,15 +271,15 @@
     display:flex; 
     align-items:center; 
     justify-content:center;
-    font-size:1.25rem; 
+    font-size:20px; 
     margin-bottom:16px;
   }
   .feature-card h4{ 
-    font-size:1.05rem; 
+    font-size:17px; 
     margin-bottom:6px; 
   }
   .feature-card p{ 
-    font-size:0.9rem; 
+    font-size:14px; 
     margin:0; 
   }
  
@@ -283,7 +301,7 @@
     display:flex; 
     align-items:center; justify-content:space-between;
     font-weight:600; 
-    font-size:0.95rem;
+    font-size:15px;
   }
   .expertise-footer a{ 
     color:#fff; 
@@ -321,7 +339,7 @@
     padding:10px 16px; 
     border-radius:12px;
     font-weight:600; 
-    font-size:0.92rem;
+    font-size:15px;
     display:flex; 
     align-items:center; 
     gap:10px;
@@ -345,15 +363,15 @@
     color:rgba(255,255,255,0.75);
    }
   .price-amt{ 
-    font-size:2.3rem; 
+    font-size:37px; 
     font-weight:800; 
   }
   .price-amt sup{ 
-    font-size:1.1rem; 
+    font-size:18px; 
     top:-1em; 
   }
   .price-per{ 
-    font-size:0.85rem; 
+    font-size:14px; 
     color:var(--muted); 
   }
   .price-card.highlight .price-per{ color:rgba(255,255,255,0.6); 
@@ -362,7 +380,7 @@
     list-style:none; 
     padding:0; 
     margin:18px 0 24px; 
-    font-size:0.9rem;
+    font-size:14px;
    }
   .price-list li{ 
     display:flex; 
@@ -409,7 +427,7 @@
     color:#fff; 
   }
   .contact-card p{ 
-    color:rgba(255,255,255,0.65); font-size:0.9rem; 
+    color:rgba(255,255,255,0.65); font-size:14px; 
   }
   .contact-card .form-control, .contact-card .form-select{
     background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2);
@@ -434,13 +452,13 @@
     margin-top:34px; 
   }
   .info-block h6{ 
-    font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; 
+    font-size:12px; text-transform:uppercase; letter-spacing:1px; 
     color:var(--muted); 
     margin-bottom:8px; 
   }
   .info-block p{ 
     margin:0; 
-    font-size:0.92rem; 
+    font-size:15px; 
     color:var(--ink); 
     font-weight:500; 
   }
@@ -479,7 +497,7 @@
     color:var(--accent);
     border-radius:999px; 
     padding:9px 18px; 
-    font-size:0.85rem; 
+    font-size:14px; 
     font-weight:600;
     text-decoration:none; 
     display:inline-flex; 
@@ -510,11 +528,11 @@
   }
   .accordion-icon{ 
     margin-left:auto; 
-    font-size:1rem; 
+    font-size:16px; 
   }
   .accordion-body{ 
     padding:0 4px 20px; 
-    font-size:0.92rem; 
+    font-size:15px; 
   }
  
   /* ---------- Review ---------- */
@@ -530,7 +548,7 @@
     color:#fff;
    }
   .review-quote{ 
-    font-size:1.15rem; 
+    font-size:18px; 
     font-weight:500; 
     line-height:1.6; 
     color:#fff; 
@@ -541,7 +559,7 @@
     color:#fff; 
   }
   .review-role{ 
-    font-size:0.85rem; 
+    font-size:14px; 
     color:rgba(255,255,255,0.6); 
   }
   .review-rating{ 
@@ -555,15 +573,15 @@
     border-radius:18px; 
   }
   .article-card .meta{ 
-    font-size:0.8rem; 
+    font-size:13px; 
     color:var(--muted); 
     margin:12px 0 6px; 
   }
   .article-card h5{ 
-    font-size:1.05rem; 
+    font-size:17px; 
   }
   .article-card a{ 
-    font-size:0.88rem; 
+    font-size:14px; 
     font-weight:600; 
     text-decoration:none; 
     color:var(--accent); 
@@ -614,7 +632,7 @@
     color:#fff; 
     font-weight:600; 
     margin-bottom:16px; 
-    font-size:0.95rem; 
+    font-size:15px; 
   }
   .footer-cols ul{ 
     list-style:none;
@@ -626,7 +644,7 @@
   }
   .footer-cols ul a{ 
     color:rgba(255,255,255,0.65); text-decoration:none; 
-    font-size:0.9rem; 
+    font-size:14px; 
   }
   .footer-cols ul a:hover{ 
     color:#fff; 
@@ -634,7 +652,7 @@
   .footer-bottom{ 
     padding:22px 0; 
     text-align:center; 
-    font-size:0.82rem; 
+    font-size:13px; 
     color:rgba(255,255,255,0.5); 
   }
  
@@ -643,7 +661,7 @@
       display:none; 
     }
     .hero-bg-word{ 
-      font-size:clamp(2.2rem, 12vw, 4rem); top:20%; 
+      font-size:clamp(35px, 12vw, 64px); top:20%; 
     }
     .hero-inner{ 
       min-height:auto; 
