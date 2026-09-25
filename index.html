@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Doctor Portfolio</title>
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <nav class="header-pill">
+      <a class="brand" href="#">Dr. Ataur Rahman</a>
+      <ul class="nav-links d-none d-lg-flex">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Blog</a></li>
+        <li><a href="#expertise">Services</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#contact" class="btn-pill d-none d-sm-inline-flex">Contact Me <i class="bi bi-arrow-up-right"></i></a>
+        <button class="btn navbar-toggler-custom d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+ 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
+  <div class="offcanvas-header">
+    <span class="brand">Dr. Ataur Rahman</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled fs-5 d-flex flex-column gap-3">
+      <li><a href="#" class="text-decoration-none text-dark fw-semibold">Home</a></li>
+      <li><a href="#about" class="text-decoration-none text-dark">About</a></li>
+      <li><a href="#articles" class="text-decoration-none text-dark">Blog</a></li>
+      <li><a href="#expertise" class="text-decoration-none text-dark">Services</a></li>
+      <li><a href="#contact" class="btn-pill mt-2">Contact Me</a></li>
+    </ul>
+  </div>
+</div>
+ 
+<!-- ================= HERO / BANNER ================= -->
+<section class="hero">
+  <div class="hero-bg-word">Meet Dr. Ataur Rahman</div>
+  <div class="container hero-inner">
+    <div class="credentials">MBBS, FCPS (Medicine)</div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="./image/Gemini_Generated_Image_iurnxdiurnxdiurn__1_-removebg-preview.png" alt="">
+      </div>
+    </div>
+    <div class="row align-items-end mt-4 gy-3">
+      <div class="col-lg-5">
+        <a href="#contact" class="btn-pill-solid">Book Appointment <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+      <div class="col-lg-7">
+        <div class="stats">
+          <div><div class="stat-num">10k+</div><div class="stat-label">Satisfied Patients</div></div>
+          <div><div class="stat-num">10+</div><div class="stat-label">Years of Experience</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="ph" style="height:320px;"><i class="bi bi-hospital"></i></div>
+      </div>
+      <div class="col-lg-7">
+        <h2 class="mb-3">About</h2>
+        <p class="fs-5">Dr. Ataur Rahman is an <strong>Internal Medicine</strong> specialist skilled in diagnosing, treating, and preventing chronic diseases.</p>
+        <a href="#about" class="btn-pill mt-2">More About Me <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= WHY CHOOSE ME ================= -->
+<section>
+  <div class="container">
+    <div class="row align-items-end mb-4 gy-3">
+      <div class="col-lg-6"><h2>Why Choose Me</h2></div>
+      <div class="col-lg-6 text-lg-end"><p class="eyebrow-desc ms-lg-auto">Trusted medical care focused on accuracy, compassion, and long-term health.</p></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-person-heart"></i></div>
+          <h4>Patient-Focused Care</h4>
+          <p>Every patient receives personalized attention with treatment plans tailored to their specific health needs.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+          <h4>Clinical Accuracy</h4>
+          <p>All diagnoses and treatments follow modern medical guidelines and proven clinical practices.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-chat-square-text"></i></div>
+          <h4>Clear Guidance</h4>
+          <p>Medical conditions and treatment options are explained in a simple, clear, and understandable way.</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-heart"></i></div>
+          <h4>Compassionate Care</h4>
+          <p>Patients are treated with respect, empathy, and genuine concern for their long-term well-being.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= AREAS OF EXPERTISE ================= -->
+<section id="expertise">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h2 class="mb-0">Areas of Expertise</h2>
+      <a href="#expertise" class="btn-pill">See More <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="expertise-card">
+          <div class="ph"><i class="bi bi-heart-pulse"></i></div>
+          <div class="expertise-footer"><span>Hypertension Management</span> <a href="#"><i class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="expertise-card">
+          <div class="ph"><i class="bi bi-activity"></i></div>
+          <div class="expertise-footer"><span>Heart &amp; Thyroid Care</span> <a href="#"><i class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="expertise-card">
+          <div class="ph"><i class="bi bi-lungs"></i></div>
+          <div class="expertise-footer"><span>Respiratory Conditions</span> <a href="#"><i class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= MY SERVICES ================= -->
+<section>
+  <div class="container">
+    <div class="services-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4">
+          <h2>My Services</h2>
+          <p>Personalized medical services designed to support your health at every stage of life.</p>
+          <div class="d-flex gap-2 mt-4">
+            <button class="circle-icon-btn on-dark" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+            <button class="circle-icon-btn on-dark" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div id="servicesCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="service-slide"><div class="ph"><i class="bi bi-clipboard2-pulse"></i></div><div class="slide-label"><i class="bi bi-stethoscope"></i> General Medicine Consultation</div></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-slide"><div class="ph"><i class="bi bi-capsule"></i></div><div class="slide-label"><i class="bi bi-clipboard2-pulse"></i> Chronic Disease Management</div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="service-slide"><div class="ph"><i class="bi bi-heart-pulse"></i></div><div class="slide-label"><i class="bi bi-heart-pulse"></i> Preventive Health Checkups</div></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="service-slide"><div class="ph"><i class="bi bi-camera-video"></i></div><div class="slide-label"><i class="bi bi-camera-video"></i> Online Consultations</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= CONSULTATION FEES ================= -->
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Consultation Fees</h2>
+      <p>Simple and transparent pricing for quality medical care.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="price-card">
+          <h5>Basic Consultation</h5>
+          <div class="price-amt"><sup>$</sup>30</div>
+          <div class="price-per">/visit</div>
+          <div class="mt-3 fw-semibold" style="font-size:14px;">What's included</div>
+          <ul class="price-list">
+            <li><i class="bi bi-check-circle"></i> General medical consultation</li>
+            <li><i class="bi bi-check-circle"></i> Basic health assessment</li>
+            <li><i class="bi bi-check-circle"></i> Diagnosis &amp; medical advice</li>
+            <li><i class="bi bi-check-circle"></i> Prescription (if required)</li>
+          </ul>
+          <a href="#contact" class="btn-get-started">Get Started <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="price-card highlight">
+          <h5>Standard Care Plan</h5>
+          <div class="price-amt"><sup>$</sup>60</div>
+          <div class="price-per">/visit</div>
+          <div class="mt-3 fw-semibold" style="font-size:14px;">What's included</div>
+          <ul class="price-list">
+            <li><i class="bi bi-check-circle"></i> Detailed medical consultation</li>
+            <li><i class="bi bi-check-circle"></i> Chronic condition evaluation</li>
+            <li><i class="bi bi-check-circle"></i> Personalized treatment plan</li>
+            <li><i class="bi bi-check-circle"></i> Lifestyle &amp; preventive guidance</li>
+          </ul>
+          <a href="#contact" class="btn-get-started">Get Started <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="price-card">
+          <h5>Comprehensive Care</h5>
+          <div class="price-amt"><sup>$</sup>100</div>
+          <div class="price-per">/visit</div>
+          <div class="mt-3 fw-semibold" style="font-size:14px;">What's included</div>
+          <ul class="price-list">
+            <li><i class="bi bi-check-circle"></i> In-depth health evaluation</li>
+            <li><i class="bi bi-check-circle"></i> Chronic disease management</li>
+            <li><i class="bi bi-check-circle"></i> Preventive screening guidance</li>
+            <li><i class="bi bi-check-circle"></i> Follow-up consultation support</li>
+          </ul>
+          <a href="#contact" class="btn-get-started">Get Started <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6 contact-photo">
+        <div class="ph" style="height:100%; min-height:420px;"><i class="bi bi-people"></i></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-card h-100">
+          <h4>Contact Info</h4>
+          <p>Questions? Comments? Write us a message anytime.</p>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+              <div class="col-md-6"><input type="date" class="form-control" placeholder="Choose Date"></div>
+              <div class="col-md-6">
+                <select class="form-select">
+                  <option selected disabled>Choose Services</option>
+                  <option>General Medicine Consultation</option>
+                  <option>Chronic Disease Management</option>
+                  <option>Online Consultation</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
+              <div class="col-12">
+                <button type="submit" class="btn-pill-light w-100 justify-content-center">Book Appointment <i class="bi bi-arrow-up-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="info-strip">
+      <div class="info-block">
+        <h6>Work Hours</h6>
+        <p>Monday–Friday: 9AM–7PM</p>
+        <p>Sunday: 9AM–2PM</p>
+      </div>
+      <div class="info-block">
+        <h6>Location</h6>
+        <p>California, US</p>
+      </div>
+      <div class="info-block">
+        <h6>Support</h6>
+        <p>hello@drthomas.com</p>
+        <p>+0212 585 2211</p>
+        <div class="social-row">
+          <a href="#" class="circle-icon-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="circle-icon-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="circle-icon-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="circle-icon-btn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= CASE STUDY ================= -->
+<section>
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h2 class="mb-0">Case Study</h2>
+      <a href="#" class="btn-pill">More Case Study <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="case-card">
+          <div class="ph"><i class="bi bi-clipboard2-pulse"></i></div>
+          <div class="case-overlay">
+            <h5>Comprehensive Diabetes Management</h5>
+            <a href="#">Full Case Study <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="case-card">
+          <div class="ph"><i class="bi bi-droplet-half"></i></div>
+          <div class="case-overlay">
+            <h5>Managing Type 2 Diabetes Effectively</h5>
+            <a href="#">Full Case Study <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h2>Any Question?</h2>
+        <a href="#" class="btn-pill mt-2">See More <i class="bi bi-arrow-up-right"></i></a>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How do I book an appointment? <i class="bi bi-plus accordion-icon"></i>
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">You can book an appointment using the form above, by calling our office, or through the Book Appointment button in the header.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Do I need an appointment before visiting? <i class="bi bi-plus accordion-icon"></i>
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, appointments are recommended to ensure proper consultation time and minimal waiting.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Does Dr. Thomas treat chronic conditions? <i class="bi bi-plus accordion-icon"></i>
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, Dr. Thomas specializes in diagnosing, treating, and managing chronic conditions such as hypertension, diabetes, and thyroid disorders.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Are online consultations available? <i class="bi bi-plus accordion-icon"></i>
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes, online consultations can be booked through the contact form by selecting the online consultation service.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= PATIENT REVIEW ================= -->
+<section>
+  <div class="container">
+    <div class="review-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4">
+          <h2>My Patient<br>Review</h2>
+          <div class="d-flex gap-2 mt-4">
+            <button class="circle-icon-btn on-dark" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+            <button class="circle-icon-btn on-dark" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div id="reviewCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="review-quote">"Dr. Thomas took the time to listen and explain my condition clearly. I felt confident and well cared for throughout my treatment."</p>
+                <div class="review-name">Michael R.</div>
+                <div class="review-role">Patient</div>
+                <div class="review-rating mt-2"><i class="bi bi-star-fill"></i> 4.9</div>
+              </div>
+              <div class="carousel-item">
+                <p class="review-quote">"Every visit feels personal and reassuring. The follow-up guidance made managing my condition so much easier."</p>
+                <div class="review-name">Sarah W.</div>
+                <div class="review-role">Patient</div>
+                <div class="review-rating mt-2"><i class="bi bi-star-fill"></i> 4.8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= READ ARTICLES ================= -->
+<section id="articles">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h2 class="mb-0">Read Articles</h2>
+      <a href="#" class="btn-pill">Read More <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="article-card">
+          <div class="ph"><i class="bi bi-droplet-half"></i></div>
+          <div class="meta">January 22, 2026 &nbsp;•&nbsp; 4 min read</div>
+          <h5>Understanding Diabetes: Early Signs and Prevention</h5>
+          <a href="#">Read More <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="article-card">
+          <div class="ph"><i class="bi bi-heart-pulse"></i></div>
+          <div class="meta">January 15, 2026 &nbsp;•&nbsp; 6 min read</div>
+          <h5>Managing High Blood Pressure: Heart Health Tips</h5>
+          <a href="#">Read More <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= CTA STRIP ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-strip">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-6">
+          <h3 class="mb-0">Get in touch with me<br>for Appointment</h3>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex cta-input-group">
+            <input type="email" class="form-control" placeholder="Phone Number">
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-6">
+          <h2>Let's Connect<br>With Me</h2>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex footer-input-group">
+            <input type="email" class="form-control" placeholder="Enter Your Email">
+            <button type="submit" class="btn"><i class="bi bi-arrow-up-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row py-5 gy-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="rounded-circle bg-white bg-opacity-10 d-flex align-items-center justify-content-center" style="width:42px;height:42px;"><i class="bi bi-heart-pulse text-white"></i></div>
+          <div>
+            <div class="text-white fw-semibold">Dr. Thomas</div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.5);">Medicine Specialist</div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="circle-icon-btn on-dark"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="circle-icon-btn on-dark"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="circle-icon-btn on-dark"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="circle-icon-btn on-dark"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 footer-cols">
+        <h6>Explore</h6>
+        <ul>
+          <li><a href="#">Case Study</a></li>
+          <li><a href="#">Blog &amp; Insights</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 footer-cols">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#contact">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 footer-cols">
+        <h6>Legal Links</h6>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="footer-bottom">© 2026 Dr. Thomas. All Rights Reserved.</div>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
