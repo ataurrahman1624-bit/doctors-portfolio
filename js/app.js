@@ -1,23 +1,23 @@
-$(document).ready(function () {
-
-  /* ---------- Header Hide on Scroll ---------- */
+/* ---------- Header Hide on Scroll ---------- */
+$(document).ready(function() {
   const $header = $('.site-header');
   const $footer = $('.site-footer');
+  
+  if (!$header.length || !$footer.length) return;
 
-  if ($header.length && $footer.length) {
-    $(window).on('scroll', function () {
-      const footerTop = $footer[0].getBoundingClientRect().top;
-      const headerHeight = $header.outerHeight();
-
-      if (footerTop <= headerHeight) {
-        $header.addClass('is-hidden');
-      } else {
-        $header.removeClass('is-hidden');
-      }
-    });
-  }
-
-  /* ---------- Expertise Slider ---------- */
+  $(window).on('scroll', function() {
+    const footerTop = $footer[0].getBoundingClientRect().top;
+    const headerHeight = $header.outerHeight();
+    
+    if (footerTop <= headerHeight) {
+      $header.addClass('is-hidden');
+    } else {
+      $header.removeClass('is-hidden');
+    }
+  });
+});
+/* ---------- Expertise Slider ---------- */
+$(document).ready(function () {
   $('.expertise-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -29,10 +29,10 @@ $(document).ready(function () {
       { breakpoint: 992, settings: { slidesToShow: 2 } },
       { breakpoint: 768, settings: { slidesToShow: 1 } }
     ]
+    
+/* ---------- Services Slider ---------- */
   });
-
-  /* ---------- Services Slider ---------- */
-  $('.services-slider').slick({
+    $('.services-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
@@ -44,11 +44,9 @@ $(document).ready(function () {
       { breakpoint: 768, settings: { slidesToShow: 1 } }
     ]
   });
-
-  /* ---------- Review Slider ---------- */
-  $('.review-slider')
+  // Review slider
+ $('.review-slider')
     .on('beforeChange', function () {
-      // stop YouTube video when slide changes
       $(this).find('iframe').each(function () {
         this.src = this.src;
       });
@@ -65,8 +63,8 @@ $(document).ready(function () {
         { breakpoint: 992, settings: { slidesToShow: 1 } }
       ]
     });
-
-  /* ---------- Contact Form + SweetAlert ---------- */
+});
+  // Contact form + SweetAlert
   $('#contactForm').on('submit', function (e) {
     e.preventDefault();
     var form = this;
@@ -93,5 +91,3 @@ $(document).ready(function () {
     form.reset();
     $(form).removeClass('was-validated');
   });
-
- 
